@@ -1,6 +1,6 @@
 # History 
 
-Saeed (one of my friends) has a sheet for his favorite movies and series. The lack of director names of each movie and serie in that list bothered him. So i create a scraper for Saeid as a birthday gift (sorry for latency).
+Saeed (one of my friends) has a sheet for his favorite movies and series. The lack of director names of each movie and serie in that list bothered him. So i create a scraper for Saeed as a birthday gift (sorry for latency).
 
 # Code
 
