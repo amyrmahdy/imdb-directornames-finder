@@ -4,7 +4,7 @@ from selenium import webdriver
 
 # Read
 df = pd.read_csv("input.csv")
-# To restrict NULL input for 'year' field
+# To restrict user from NULL input for 'year' field
 df["year"].astype(int)
 df["year"] = df["year"].astype(str)
 all_movies = df.loc[:,"name"].values.tolist()
@@ -90,10 +90,6 @@ if driver is not None:
 
 
 # Save results
-print(len(all_directors))
-print(len(all_movie_serie_urls))
-print(len(all_casts))
-
 df["director"] = all_directors
 df["url"] = all_movie_serie_urls
 df["cast"] = all_casts
@@ -103,4 +99,5 @@ df.to_csv("output.csv", index = False)
 
 
 # Author: amyrmahdy
-# Date: 13 Feb 2023
+# Date: 13 Feb 2023 [v0]
+# Date: 3 Jan 2024 [v1]
