@@ -1,6 +1,6 @@
-easier I/O
-scenario when year=null
-clean url output
-refactor variable names
-update readme
-explain chromedriver
+easier I/O [v]
+scenario when year=null [v]
+clean url output [x]
+refactor variable names [x]
+update readme [x]
+explain chromedriver [x]
