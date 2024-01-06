@@ -2,35 +2,32 @@
 
 Saeed (one of my friends) has a sheet for his favorite movies and series. The lack of director names of each movie and serie in that list bothered him. So i create a scraper for Saeed as a birthday gift (sorry for latency).
 
-# Code
+# Files
 
-**before.csv** is the sheet before adding directors names.
+**input.csv** is the input given by user. There are some examples in it. Follow the structure. Both fields `name` and `year` are obligatory.
 
-**after.csv** is the sheet after adding directors names. I added ULR for each movie and serie, too. Maybe he will use that someday!
+**output.csv** is the output (result) given by app.
 
-**main_selenium.py** is the last version of this scraper. Existed some versions without selenium and only using request library but IMDB always blocked my ip, so I used selenium. The steps for this scraper are:
+**main.py** is the app.
 
-1 - Read all *names* of movies and series that we need to find director of them
+**requirements.txt** is the app's requirements.
 
-2 - Open [imdb website](https://www.imdb.com/) in a chrome browser using selenium
+**chromedriver** is Google Chrome driver.
 
-3 - Use *names* in search bar to find the movie or serie
+# How to use:
 
-4 - Take first result of the search. Cause it is the most related movie or serie with the *name* that we searched. 
-
-5 - Go to the credit page for the movie or serie.
-
-6 - Take the director(s) name(s).
-
-7 - Take the casts names.
-
-8 - Take the url to imdb page for the movie or serie.
-
-9 - Save the result.
+1. Clone this repository.
+2. Install requirements using `pip install -r requirements.txt`
+3. File `chromedriver` should be the same version as your current chrome browser. This chromedriver's version is 120.0.6099, which is same as my chrome browser version. Hopefully, you can find your suitable chromedriver [HERE](https://googlechromelabs.github.io/chrome-for-testing/).
+4. Update `input.csv` with the `name` and `year` of the movies which you want to know their directors.
+5. Run the app. `python3 main.py`
+6. Enjoy! `output.csv`
 
 ---
 Author: **amyrmahdy**
 
-Date: **13 Feb 2023**
+Date: **13 Feb 2023 [v0]**
+
+Date: **3 Jan 2024 [v1]**
 
 
