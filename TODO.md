@@ -1,3 +1,3 @@
-update readme [x]
-explain chromedriver [x]
+update readme [v]
+explain chromedriver [v]
 refactor variable names [x]
